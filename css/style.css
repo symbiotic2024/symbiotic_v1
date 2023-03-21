@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box; 
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   text-transform: capitalize;
+   background: transparent;
+   max-width: 100%;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: white;
+     /* padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto; */
+}
+ a {
+    text-decoration: none;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+ }
+header {
+    width: 100%;
+    background-image: url(../images/grid_0.webp);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+}
+.beta {
+    width: fit-content;
+    background-color: red;
+    color: white;
+    padding: 6px 50px 6px 50px;
+    letter-spacing: 13px;
+    transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    position: absolute;
+    top: 32px;
+    left: -32px;
+    animation-name: beta;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes beta {
+    0% {
+        background-color: red;
+        color: white;
+    }
+    30% { background-color: white;
+    color:#1d9bf0;}
+
+    70% {
+      background-color: #6c409c;
+      color: #aaaaaa;  
+    }
+
+    90% {
+        background-color: black;
+        color: white;
+    }
+}
+.linksHead {
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    color: white;
+    font-size: xx-large;
+    font-weight: 400px;
+    font-family: 'Lilita One', 'Sagoe UI' ;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+/* ul of links in head*/
+.header-menu {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header-menu>li>a {
+    color: white;
+    margin-right: 45px;
+    font-family: 'Tilt Warp', 'Sagoe UI' ,;
+
+}
+.button-call {
+    width: auto;
+    padding: 10px 15px;
+    background-color: #6c409c;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/* to put content in center of page */
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* main */
+main {
+    background-color: #ffff;
+}
+h1 {
+    text-align: center;
+}
+
+.article {
+    width: auto;
+    height: auto;
+    line-height: 40px;
+    padding: 20px;
+    color: white;
+    opacity: .8;
+    background-image: url(../images/water-colorful-liquid-minimalism-wallpaper-preview.jpg);
+    background-size: cover;
+    border:  none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.planes {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 10%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.plane {
+    margin-top: 50px;
+    width: 40%;
+    height: auto;
+    background-color: #dddd;
+    padding: 10px;
+    padding-right: 20px;
+    margin-right: 10px;
+    line-height: 50px;
+}
+h3 {
+    font-size: smaller;
+    color: #aaaaaa;
+    font-weight: lighter;
+    text-align: center;
+}
+.advs {
+    width: 100%;
+    border: .6px black solid;
+    padding: 20px;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+.advs>p {
+    text-align: center;
+     font-weight: bolder;
+     line-height: 31px;
+}
+button {
+    border: none;
+    width: auto;
+    background-color: #6c409c;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 25px;
+    position: relative;
+    left: 45%;
+}
+.call {
+    color: white;
+}
+/* finish main */
+
+/* footer */
+  footer {
+    display: flex;
+     justify-content: space-between;
+     width: 100%;
+     height: auto;
+     background-color: #dddd;
+      transform: translateY(10%);
+     -webkit-transform: translateY(10%);
+     -moz-transform: translateY(10%);
+     -ms-transform: translateY(10%);
+     -o-transform: translateY(10%); 
+     margin-top: 50px;
+} 
+
+ footer>ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+} 
+footer>ul>li>a {
+    margin-right: 30px;
+    color: #93979a ;
+} 
+
+.fa-brands {
+    font-size: 20px;
+}
+/* finish footer */
+/* hover */
+.header-menu a:hover {
+    color:hsl(5deg 96% 55%);
+    border-bottom: .5px hsl(5deg 96% 55%) solid;
+}
+.button-call:hover {
+    color: white !important;
+    border-bottom: none !important;
+} 
+.links-footer a:hover {
+    color: black;
+}
+.fa-square-facebook:hover {
+color: #1877f2;
+border-radius: 50px;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+-ms-border-radius: 50px;
+-o-border-radius: 50px;
+}
+.fa-linkedin:hover {
+    color:#0a66c2;
+}
+.fa-twitter:hover {
+    color:#1d9bf0;
+}
+.fa-square-instagram:hover {
+    
+    color: rgba(0, 0, 0, .5);
+    background: linear-gradient(45deg,
+     #405de6,
+      #5851db,
+       #833ab4,
+        #c13584,
+         #e1306c,
+          #fd1d1d);;
+}
+
+/* finish hover */
+ @media (max-width: 767px) {
+    .linksHead {
+        position: relative;
+        right: 0px;
+        top: 81px;
+
+    }
+    .header-menu {
+       display: block;
+    }
+    .header-menu>li {
+        margin-top: 40px;
+    }
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: none;
+        margin-left: none;
+    }
+.planes {
+    position: relative;
+    left: 0px;
+    margin-right: 0px;
+}
+    .plane {
+        width: 100%;
+        margin-right: 0px;
+        text-indent: 15px;
+    }
+    footer {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+    }
+    footer>ul {
+        display: block; 
+    }
+    .links-footer>li {
+        margin-top: 15px;
+    }
+    .fa-brands {
+        margin-bottom: 19px;
+    }
+ }
+ @media (min-width: 768px) and (max-width: 991px) {
+ }

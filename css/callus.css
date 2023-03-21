@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: white;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+a:hover {
+    color: white;
+}
+i {
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content {
+    position: relative;
+    top: 30%;
+}
+.contact {
+    margin-left: 30px;
+    width: 26.66666667%;
+}
+.contact>div {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition-duration: .3s;
+}
+
+.contact>div:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+.phone {
+    background-color: #c6d9d3;
+}
+.gmail {
+    background-color: #da3a2a;
+}
+
+img {
+    width: 299px;
+    height: 630px;
+}
+p {
+    font-size: 73px;
+}
+
+.text {
+    width: 26.66666667%;
+    padding-left: 20px;
+}
+.images {
+    width: 26.66666667%;
+}
+
+@media (max-width: 786px) {
+* {
+    width: auto;
+}
+    .container {
+        display: block;
+    }
+    .images {
+        display: none;
+    }
+    p {
+        font-size: 33px;
+    }
+    .text {
+        width:390px;
+    }
+    .contact {
+        margin-left: 30px;
+        width: auto;
+}
+    .images {
+        display: none;
+    }
+}
